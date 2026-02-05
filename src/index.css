@@ -1,0 +1,23 @@
+/* Global and base styles */
+@import './styles/global.css';
+
+/* Layout and containers */
+@import './styles/layout.css';
+
+/* Button styles */
+@import './styles/buttons.css';
+
+/* Flashcard and badges */
+@import './styles/flashcard.css';
+
+/* Progress bar */
+@import './styles/progress.css';
+
+/* Modal styles */
+@import './styles/modal.css';
+
+/* Card list styles */
+@import './styles/cardlist.css';
+
+/* Animations */
+@import './styles/animations.css';

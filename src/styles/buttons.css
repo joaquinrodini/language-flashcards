@@ -1,0 +1,123 @@
+/* Button styles */
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+
+.reshuffle-btn {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #475569;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 20px;
+}
+
+.reshuffle-btn:hover {
+  background: #334155;
+}
+
+.deck-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #475569;
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.deck-btn:hover:not(:disabled) {
+  border-color: #06b6d4;
+  color: #06b6d4;
+}
+
+.deck-btn.active {
+  background: linear-gradient(90deg, #06b6d4 0%, #a855f7 100%);
+  border-color: #06b6d4;
+  color: white;
+  cursor: not-allowed;
+}
+
+.deck-btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn-prev {
+  background: #475569;
+  color: white;
+}
+
+.btn-prev:hover:not(:disabled) {
+  background: #334155;
+}
+
+.btn-prev:disabled {
+  background: #1e293b;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-next {
+  background: linear-gradient(90deg, #06b6d4 0%, #a855f7 100%);
+  color: white;
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
+}
+
+.btn-next:hover {
+  box-shadow: 0 15px 35px rgba(6, 182, 212, 0.4);
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.manage-btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  color: white;
+  border: 2px solid;
+  transition: all 0.3s ease;
+    display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-btn {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.add-btn:hover {
+  background: #059669;
+  border-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3);
+}
+
+.remove-btn {
+  background: #ef4444;
+  border-color: #ef4444;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(239, 68, 68, 0.3);
+}

@@ -1,0 +1,91 @@
+/* Flashcard and difficulty badge styles */
+.flashcard {
+  border-radius: 16px;
+  padding: 40px;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 2px solid;
+  position: relative;
+}
+
+.flashcard.easy {
+  background: #f0fdf4;
+  border-color: #dcfce7;
+}
+
+.flashcard.average {
+  background: #fffbeb;
+  border-color: #fef3c7;
+}
+
+.flashcard.hard {
+  background: #fef2f2;
+  border-color: #fee2e2;
+}
+
+.difficulty-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.difficulty-badge.easy {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.difficulty-badge.average {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.difficulty-badge.hard {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.card-content {
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.card-label {
+  color: #64748b;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.flashcard.easy .card-label {
+  color: #16a34a;
+}
+
+.flashcard.average .card-label {
+  color: #ca8a04;
+}
+
+.flashcard.hard .card-label {
+  color: #dc2626;
+}
+
+.card-text {
+  font-size: 48px;
+  font-family: Georgia, serif;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.card-hint {
+  font-size: 12px;
+  color: #94a3b8;
+  font-style: italic;
+}
